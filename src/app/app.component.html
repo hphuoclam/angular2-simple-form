@@ -1,0 +1,96 @@
+<div class="content">
+    <div class="row child">
+        <div class="col-xs-12 col-sm-7 p-l-0">
+            <h3 class="text-capitalize title">Image text widget</h3>
+            <app-form-builder [parentFormGroup]="myForm" 
+                [widget_size_list]="widget_size_list" 
+                [widget_type_list]="widget_type_list" 
+                [navigation_type_list]="navigation_type_list"></app-form-builder>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+            <div class="preview">
+                <div *ngIf="preview" class="preview_child">
+                    <!-- <div class="row" *ngFor="let obj of objectKeys(formModel)">
+                        {{obj}}: {{formModel[obj]}}
+                    </div> -->
+                    <div class="row show-content" *ngIf="formModel.name">
+                        <div class="col-sm-4">
+                            Name:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.name}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.widget_size">
+                        <div class="col-sm-4">
+                            Widget Size:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.widget_size}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.widget_type">
+                        <div class="col-sm-4">
+                            Widget Type:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.widget_type}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.image_path">
+                        <div class="col-sm-4">
+                            Image Path:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.image_path}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.header">
+                        <div class="col-sm-4">
+                            Header:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.header}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.enable_click">
+                        <div class="col-sm-4">
+                            Enable Click:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.enable_click}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.url">
+                        <div class="col-sm-4">
+                            Url:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.url}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.navigation_type">
+                        <div class="col-sm-4">
+                            Navigation Type:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.navigation_type}}
+                        </div>
+                    </div>
+                    <div class="row show-content" *ngIf="formModel.description">
+                        <div class="col-sm-4">
+                            Description:
+                        </div>
+                        <div class="col-sm-8">
+                            {{formModel.description}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-default cus_btn" (click)="cancelClick(myForm.value)">Cancel Changes <i class="fa fa-times-circle fa-2x text-danger" aria-hidden="true"></i></button>
+                <button type="button" class="btn btn-default cus_btn" (click)="updateClick()">Update Widget <i class="fa fa-check-circle fa-2x text-success" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

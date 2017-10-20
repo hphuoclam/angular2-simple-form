@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+html{
+	background-image: url("./assets/image/bg.jpg");
+	height: 100%;
+}
+body{
+	background: rgba(0,0,0,.7);
+	height: 100%;
+}
+*:focus{
+	outline: none !important;
+}

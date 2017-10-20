@@ -1,0 +1,37 @@
+<form class="form-horizontal" [formGroup]="parentFormGroup">
+    <div class="row">
+        <div class="col-sm-6 col-xs-12 p-l-0">
+            <div class="form-group">
+                <app-custom-input [group]="parentFormGroup" name="name" text="Name"></app-custom-input>
+            </div>
+            <div class="form-group">
+                <app-custom-dropdown [group]="parentFormGroup" name="widget_size" text="Widget Size" [data_list]="widget_size_list"></app-custom-dropdown>
+            </div>
+            <div class="form-group">
+                <app-custom-dropdown [group]="parentFormGroup" name="widget_type" text="Widget Type" [data_list]="widget_type_list"></app-custom-dropdown>
+            </div>
+            <div class="form-group">
+                <app-custom-input [group]="parentFormGroup" name="image_path" text="Image Path" type="url"></app-custom-input>
+            </div>
+            <div class="form-group">
+                <app-custom-input [group]="parentFormGroup" name="header" text="Header"></app-custom-input>
+            </div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="form-group">
+                <app-custom-input [group]="parentFormGroup" name="enable_click" text="Enable Click" type="checkbox"></app-custom-input>
+            </div>
+            <div class="form-group">
+                <app-custom-input [group]="parentFormGroup" name="url" text="Url"></app-custom-input>
+            </div>
+            <div class="form-group">
+                <app-custom-dropdown [group]="parentFormGroup" name="navigation_type" text="Navigation Type" [data_list]="navigation_type_list"></app-custom-dropdown>
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="form-group">
+                <app-custom-textarea [group]="parentFormGroup" name="description" text="Description"></app-custom-textarea>
+            </div>
+        </div>
+    </div>
+</form>
