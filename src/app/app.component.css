@@ -1,0 +1,52 @@
+.row{
+	margin: 0 !important;
+}
+.content{
+	padding: 5% 30px;
+    color: #fff;
+    /*margin: 15px !important:;*/
+}
+.child{
+	background: rgba(0,0,0,0.5);
+    padding: 50px 0;
+}
+.form-control{
+	border-radius: 0 !important;
+}
+.p-l-0{
+	padding-left: 0 !important;
+}
+.p-r-0{
+	padding-right: 0 !important;
+}
+.title{
+	margin: 0 0 50px 50px;
+	text-decoration: underline;
+}
+.preview{
+	min-height: 400px;
+	background: #0c0e3a;
+	margin-bottom: 30px
+}
+.cus_btn:focus,
+.cus_btn:active,
+.cus_btn{
+	background: transparent;
+    border-color: transparent;
+    color: #fff;
+    box-shadow: none;
+}
+.cus_btn:hover{
+	color: #ccc;
+}
+pre{
+	background: transparent;
+    color: #fff;
+    border-color: transparent;
+}
+.preview_child{
+	padding: 30px 15px;
+}
+.show-content{
+	padding: 5px 0;
+}
